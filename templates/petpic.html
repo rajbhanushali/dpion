@@ -1,0 +1,39 @@
+<ion-view view-title="Pet Picture" hide-nav-bar="true" class="login-bg">
+	<ion-content>
+
+	<div><!-- ng-show = "noPicYet" --> 
+		  <input type="image" id="takeProfilePic" src="http://images.clipartpanda.com/dog-paw-clipart-LTKdnyGGc.png" class="imageicon" ng-click="getUserProfilePic()"/>
+		  <p class="centered userPhotoDesc">
+		  Give us a nice picture of your furry friend! 
+		  <br>
+		  Click on the paw.
+		  </p>
+	</div>
+
+	<br>
+
+		<!-- <div class="centered" ng-hide="noPicYet">
+		 	<img class="img-circle profilePic" ng-src="{{profilePic}}">
+		 	<p class="centered">Awesome!</p>
+		 </div>
+		-->
+
+		<h4 style="padding-left:10px;" class="white">Tell us about your pet!</h5>
+
+
+		<div class="list list-inset">
+		  <label class="item item-input">
+		    <textarea style="padding-left:2px;" rows="6" ng-model="desc" placeholder="Buster is 4 years old. He likes to play catch and chase other dogs, and loves to play with small dogs. However, he does get intimidated when approached by large dogs. I like to take Buster out in the evening about an hour before sunset. He is typically very friendly and obedient."></textarea>
+		  </label>
+		</div>
+
+		<div class="padding center">
+		  <button class="button button-positive round" ui-sref="home" ng-click="addPetDesc(desc)"> <!--ng-click = "afterUserPic()" ng-hide="noPicYet"-->
+		    <i class="ion-arrow-right-c"></i>
+		  </button>
+		</div>
+
+
+      
+	</ion-content>
+</ion-view>
